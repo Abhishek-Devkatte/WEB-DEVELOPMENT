@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Registration Form</h1>
+    
+    <form action="" method="post" style="width: 50%; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+        <label for="name" style="display: block; margin-bottom: 5px;">Student Name:</label>
+        <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #ddd;">
+
+        <div style="margin-bottom: 15px;">
+            <label style="display: block; margin-bottom: 5px;">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required> Male
+            <input type="radio" id="female" name="gender" value="female" required> Female
+            <input type="radio" id="other" name="gender" value="other" required> Other
+        </div>
+
+        <label for="email" style="display: block; margin-bottom: 5px;">Email:</label>
+        <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #ddd;">
+
+        <label for="mobile" style="display: block; margin-bottom: 5px;">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #ddd;">
+
+        <label for="address" style="display: block; margin-bottom: 5px;">Address:</label>
+        <textarea id="address" name="address" rows="4" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #ddd;"></textarea>
+
+        <label for="college" style="display: block; margin-bottom: 5px;">College Name:</label>
+        <input type="text" id="college" name="college" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #ddd;">
+
+        <label for="department" style="display: block; margin-bottom: 5px;">Select Department:</label>
+        <select id="department" name="department" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #ddd;">
+            <option value="CSE">CSE</option>
+            <option value="AIML">AIML</option>
+            <option value="DS">DS</option>
+            <option value="ENTC">ENTC</option>
+            <option value="Mechanical">Mechanical</option>
+            <option value="Power">Power</option>
+            <option value="Civil">Civil</option>
+        </select>
+
+        <label style="display: block; margin-bottom: 5px;">Select Programming Skills:</label>
+        <div style="margin-bottom: 15px;">
+            <input type="checkbox" id="c" name="skills" value="C"> C
+            <input type="checkbox" id="cpp" name="skills" value="C++"> C++
+            <input type="checkbox" id="java" name="skills" value="Java"> Java
+            <input type="checkbox" id="python" name="skills" value="Python"> Python
+            <input type="checkbox" id="web" name="skills" value="Web Development"> Web Development
+            <input type="checkbox" id="dsa" name="skills" value="DSA"> DSA
+            <input type="checkbox" id="ai" name="skills" value="AI"> Artificial Intelligence
+            <input type="checkbox" id="cloud" name="skills" value="Cloud Computing"> Cloud Computing
+        </div>
+
+        <input type="submit" value="Submit" style="width: 100%; padding: 15px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+    </form>
+
+</body>
+</html>

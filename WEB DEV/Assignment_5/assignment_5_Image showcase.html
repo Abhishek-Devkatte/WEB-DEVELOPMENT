@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Avengers Image Showcase</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #4b3f72;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      margin: 30px 20px 10px;
+      color: #4b3f72;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h2 {
+      font-size: 20px;
+      color: #4b3f72;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .card img {
+  width: 100%;
+  height: 250px;            
+  object-fit: cover;        
+  object-position: center;  
+  border-radius: 8px;
+  border: 3px solid #4b3f72;
+  transition: transform 0.3s ease;
+}
+
+
+    .card img:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      background-color: #4b3f72;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 500px) {
+      header, footer {
+        font-size: 18px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Assignment No. 05 - Avengers Image Showcase
+  </header>
+
+  <h1>🦸‍♂️ Avengers Image Gallery</h1>
+
+  <div class="container">
+    <div class="card">
+      <h2>Basic Image</h2>
+      <p>A simple image without additional attributes.</p>
+      <img src="hulk.jpg" alt="Hulk">
+    </div>
+
+    <div class="card">
+      <h2>Width & Height Applied</h2>
+      <p>Image resized using CSS for consistent layout.</p>
+      <img src="thor.jpg" alt="Thor">
+    </div>
+
+    <div class="card">
+      <h2>CSS Styled Image</h2>
+      <p>Border and rounded corners via CSS styling.</p>
+      <img src="captainamerica.jpg" alt="Captain America">
+    </div>
+
+    <div class="card">
+      <h2>Responsive Image</h2>
+      <p>Image adjusts based on screen width using <code>srcset</code>.</p>
+      <img src="spiderman.jpg"
+           srcset="spiderman.jpg 300w, spiderman.jpg 600w"
+           sizes="(max-width: 600px) 100vw, 300px"
+           alt="Spiderman">
+    </div>
+
+    <div class="card">
+      <h2>Lazy Loading</h2>
+      <p>This image loads only when it's needed.</p>
+      <img src="wanda.jpg" alt="Wanda" loading="lazy">
+    </div>
+
+    <div class="card">
+      <h2>Image with Description</h2>
+      <p>Provides a link to a detailed description of the character.</p>
+      <a href="https://en.wikipedia.org/wiki/The_Avengers_(2012_film)" target="_blank">
+        <img src="natahsa.jpg" alt="Natasha">
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    Created by Abhishek Devkatte | S.Y (A) | Batch: S6 | Roll No. 141
+  </footer>
+
+</body>
+</html>

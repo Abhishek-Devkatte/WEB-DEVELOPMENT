@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Page</title>
+</head>
+<body>
+   <div class="title"> <h1>Student Registration Form</h1></div>
+    <form id="registration-form">
+        <label for="name" class="form-label">Student Name</label>
+        <input type="text" id="name" class="form-input"><br><br>
+
+        <label for="mobile" class="form-label">Phone No</label>
+        <input type="text" id="mobile" class="form-input"><br><br>
+
+        <label for="email" class="form-label">Email Address</label>
+        <input type="text" id="email" class="form-input"><br><br>
+
+        <label for="department" class="form-label">College Department</label>
+        <select id="department" class="form-select">
+            <option value="None">None</option>
+            <option value="CSE">Computer Science & Engineering</option>
+            <option value="CSE-DS">Computer Science & Engineering (Data Science)</option>
+            <option value="AI-ML">Artificial Intelligence & Machine Learning</option>
+            <option value="ETC">Electronics & Telecommunication Engineering</option>
+            <option value="Chemical">Chemical Engineering</option>
+            <option value="Civil">Civil Engineering</option>
+            <option value="Mechanical">Mechanical Engineering</option>
+        </select><br><br>
+
+        <label for="skills" class="form-label">Programming Skills</label>
+        <div class="skills-container">
+            <input type="checkbox" id="c" class="skill"> C
+            <input type="checkbox" id="cpp" class="skill"> C++
+            <input type="checkbox" id="python" class="skill"> Python
+            <input type="checkbox" id="java" class="skill"> Java
+            <input type="checkbox" id="js" class="skill"> JavaScript
+            <input type="checkbox" id="fullstack" class="skill"> Fullstack Developer
+            <input type="checkbox" id="mernstack" class="skill"> MERNStack Developer
+            <input type="checkbox" id="data-tools" class="skill"> Data Analytical Tools
+            <input type="checkbox" id="ds-algo" class="skill"> Data Structures & Algorithm
+        </div><br>
+
+        <label for="gender" class="form-label">Gender</label>
+        <div class="gender-container">
+            <input type="radio" name="gender" id="male" class="gender"> Male
+            <input type="radio" name="gender" id="female" class="gender"> Female
+            <input type="radio" name="gender" id="other" class="gender"> Other
+        </div><br>
+
+        <button type="submit" id="submit-btn" class="submit-btn">Submit</button>
+    </form>
+</body>
+</html>
